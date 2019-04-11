@@ -12,7 +12,6 @@ import MapKit
 class MapKitViewController: UIViewController {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
         // 뷰 컨트롤러에 맵킨 뷰를 추가
         let mapkitView = MKMapView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
