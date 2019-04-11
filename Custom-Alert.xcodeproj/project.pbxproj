@@ -17,6 +17,7 @@
 		4E04095B225EFE0E0029CECB /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E040959225EFE0E0029CECB /* note.png */; };
 		4E04095C225EFE0E0029CECB /* rating5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E04095A225EFE0E0029CECB /* rating5@2x.png */; };
 		4E04095E225EFE200029CECB /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E04095D225EFE200029CECB /* ImageViewController.swift */; };
+		4E040960225F06050029CECB /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E04095F225F06050029CECB /* ControlViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4E040959225EFE0E0029CECB /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
 		4E04095A225EFE0E0029CECB /* rating5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rating5@2x.png"; sourceTree = "<group>"; };
 		4E04095D225EFE200029CECB /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4E04095F225F06050029CECB /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4E04093E225DE1BA0029CECB /* AppDelegate.swift */,
 				4E040940225DE1BA0029CECB /* ViewController.swift */,
 				4E04095D225EFE200029CECB /* ImageViewController.swift */,
+				4E04095F225F06050029CECB /* ControlViewController.swift */,
 				4E040950225DE7E80029CECB /* MapAlertViewController.swift */,
 				4E040955225EFC5D0029CECB /* MapKitViewController.swift */,
 				4E040942225DE1BA0029CECB /* Main.storyboard */,
@@ -177,6 +180,7 @@
 				4E04093F225DE1BA0029CECB /* AppDelegate.swift in Sources */,
 				4E04095E225EFE200029CECB /* ImageViewController.swift in Sources */,
 				4E040956225EFC5D0029CECB /* MapKitViewController.swift in Sources */,
+				4E040960225F06050029CECB /* ControlViewController.swift in Sources */,
 				4E040951225DE7E80029CECB /* MapAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
