@@ -40,10 +40,20 @@ class MapAlertViewController: UIViewController {
         // slider Alert 버튼에 액션 메소드 연결
         btnSlider.addTarget(self, action: #selector(sliderAlert(_:)), for: .touchUpInside)
         
+        // list Alert 버튼
+        let btnList = UIButton(type: .system)
+        btnList.frame = CGRect(x: 0, y: 300, width: 100, height: 30)
+        btnList.center.x = self.view.frame.width / 2
+        btnList.setTitle("List Alert", for: .normal)
+        
+        // list Alert 버튼에 액션 메소드 연결
+        btnList.addTarget(self, action: #selector(listAlert(_:)), for: .touchUpInside)
+        
         // view에 추가
         self.view.addSubview(btnMap)
         self.view.addSubview(btnImage)
         self.view.addSubview(btnSlider)
+        self.view.addSubview(btnList)
         
     }
     
@@ -115,5 +125,33 @@ class MapAlertViewController: UIViewController {
         self.present(alert, animated: false)
     }
     
+    @objc func listAlert(_ sender : Any) {
+        
+        // 알림창
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        
+        // 콘텐츠 뷰 컨트롤러
+        let contentVC = ListViewController()
+        
+        // 델리게이트 객체를 자신으로 지정
+        contentVC.delegate = self
+        
+        // 알림창의 버튼
+        let ok = UIAlertAction(title: "OK", style: .default)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        
+        // 알림창에 추가
+        alert.setValue(contentVC, forKey: "contentViewController")
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        
+        // 알림창 띄우기
+        self.present(alert, animated: false)
+        
+    }
+    
+    func didSelectRowAt(indexPath: IndexPath){
+        print("선택된 행은 \(indexPath.row) 입니다")
+    }
     
 }
